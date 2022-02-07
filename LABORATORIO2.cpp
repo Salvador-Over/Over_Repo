@@ -10,11 +10,24 @@ int main()
     int progra = 0;
     int admin = 0;
     int calculo = 0;
+    int clase;
 
+cout << "Ingrese un numero para elegir el curso deseado\n";
+    cout << "1- matematicas \n";
+    cout << "2- derecho informatico \n";
+    cout << "3- programacion \n";
+    cout << "4- administracion \n";
+    cout << "5- calculo \n";
+    cin >> clase;
 
+    switch(clase)
 
-cout << "Ingrese la nota de matematicas" << endl;
-cin >> mate;
+    {
+    case 1:
+        cout << "--Usted ha elegido matematicas-- \n";
+        cout << "Ingrese la nota de matematicas" << endl;
+        cin >> mate;
+
 
 if (mate >=8)
 {
@@ -30,7 +43,12 @@ else
 {
      cout << "Curso reprobado" << endl;
 }
+cout <<    endl;
+return main();
 
+    case 2:
+
+cout << "--Usted ha elegido derecho informatico--\n";
 cout << "Ingrese la nota de derecho" << endl;
 cin >> derecho;
 
@@ -49,7 +67,11 @@ else
      cout << "Curso reprobado" << endl;
 }
 
+cout <<    endl;
+return main();
+    case 3:
 
+cout << "--Usted ha elegido Programacion--\n";
 cout << "Ingrese la nota de programacion" << endl;
 cin >> progra;
 
@@ -67,8 +89,12 @@ else
 {
      cout << "Curso reprobado" << endl;
 }
+cout <<    endl;
+return main();
 
+    case 4:
 
+cout << "--Usted ha elegido Administracion de empresas--\n";
 cout << "Ingrese la nota de administracion" << endl;
 cin >> admin;
 
@@ -86,8 +112,13 @@ case 10:
     cout << "Curso reprobado"<<  endl  ;
     break;
 }
+cout <<    endl;
+return main();
 
-cout << "Ingrese la nota de administracion" << endl;
+    case 5:
+
+cout << "--Usted ha elegido calculo--\n";
+cout << "Ingrese la nota de calculo" << endl;
 cin >> calculo;
 
 
@@ -105,9 +136,12 @@ case 10:
     cout << "Curso reprobado"<<  endl  ;
     break;
 }
+cout <<    endl;
+return main();
 
 
 
+}
 
 
 
