@@ -15,7 +15,6 @@ for(int i=1;i<=5;i++){
 
 }
  cout<< "\t\t";
- system("pause");
  return main();
 }
 

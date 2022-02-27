@@ -38,6 +38,7 @@ int main(){
            if(posX>0)
            {
             posX-=1;
+
            }
             break;
         case 'd':
